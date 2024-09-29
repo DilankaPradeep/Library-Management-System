@@ -23,10 +23,12 @@ public class LibrarySystem {
         Book book2 = new Book("Clean Code", "Robert C. Martin", "654321");
 
         student.borrowBook(book1);  // Alice borrows a book
+        student.borrowBook(book2);  // Alice cannot borrow more books.
+
         faculty.borrowBook(book2);  // Dr. Smith borrows a book
 
-        student.returnBook(book1);  // Alice returns the book
-        faculty.returnBook(book2);  // Dr. Smith returns the book
+//        student.returnBook(book1);  // Alice returns the book
+//        faculty.returnBook(book2);  // Dr. Smith returns the book
     }
 
     public static void main(String[] args) {
